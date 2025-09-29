@@ -1,0 +1,21 @@
+
+PARA EL PROBLEMA DESCRITO POR ANDRÉS EN SAPIENCIAL.
+SUBSCRIPTION MECHANISM. CAN NOTIFY MULTIPLE OBJECTS.
+
+
+
+TIME INTENSIVE                        RESULT USER (SYSTEM)
+   PROCESS                             waiting for response
+
+   you call many times from Observer
+
+
+
+# PROBLEM -> MANY RESULT USERS WAITING
+
+Multiple components Observer -> EXPONENTIALLY INCREASING NUMBER OF REQUESTS
+
+LAYER BETWEEN THE TWO
+
+TIME INTENSIVE PROCESSING -> REGISTRY (when available, notifyes RESULT USERS)
+
